@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Survey-form/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <title>Survey form</title>
 </head>
 <body>
-    <div>
+    <header>
         <h1>freeCodeCamp Survey Form</h1>
         <p>Thank you for taking the time to help us improve the platform</p>
-    </div>
+    </header>
     <form>
         <fieldset>  <!--criando campo de formulario-->
             <div>
                 <label>Name</label> <!--criando etiquetas do formulário-->
-                <input type="text" name="name" id="name" placeholder="Enter your
-                name"> <!--placeholder vai indicar visualmente na pag o que deve ser feito dentro
+                <input class="totalspace" type="text" name="name" id="name"
+                placeholder="Enter your name" required> <!--placeholder vai indicar visualmente na pag o
+                que deve ser feito dentro
                 do campo input-->
             </div>
             <div>
                 <label>Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input class="totalspace" type="email" name="email" id="email"
+                placeholder="Enter your email" required>
             </div>
             <div>
                 <label>Age (Optional)</label>
-                <input type="number" name="age" id="age" placeholder="Age">
+                <input class="totalspace" type="number" name="age" id="age" placeholder="Age">
             </div>
             <div>
                 <label>Which option best describes your current role?</label>
-                  <select name="role" id="role"> <!--select e option vão mostrar
+                  <select class="totalspace" name="role" id="role" required> <!--select e option vão mostrar
                   as opçoes que são possiveis selecionar ao clicar dentro do campo-->
                       <option disabled selected value>Selected current
                       role</option> <!--disable selec.... n vai deixar clicar
@@ -59,7 +62,7 @@
             </div>
             <div>
                 <label>What is your favorite feature of freeCodeCamp?</label>
-                <select name="feature" id="feature">
+                <select class="totalspace" name="feature" id="feature" required>
                     <option disabled selected value>Select an option</option>
                     <option value="Challenges">Challenges</option>
                     <option value="Projects">Projects</option>
@@ -108,7 +111,7 @@
         </fieldset>
         <div>
             <label>Any comments or suggestions?</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"
+            <textarea class="totalspace" name="comments" id="comments" cols="30" rows="10"
             placeholder="Enter your comment here..."></textarea> <!--criando
             area de texto para comentario-->
         </div>
