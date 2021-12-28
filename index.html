@@ -13,26 +13,26 @@
         <h1>freeCodeCamp Survey Form</h1>
         <p>Thank you for taking the time to help us improve the platform</p>
     </header>
-    <form>
-        <fieldset>  <!--criando campo de formulario-->
+    <form> <!--criando campo de formulario-->
+        <fieldset> 
             <div>
-                <label>Name</label> <!--criando etiquetas do formulário-->
+                <label class="espaçamento">Name</label> <!--criando etiquetas do formulário-->
                 <input class="totalspace" type="text" name="name" id="name"
-                placeholder="Enter your name" required> <!--placeholder vai indicar visualmente na pag o
+                placeholder="Enter your name" required autofocus> <!--placeholder vai indicar visualmente na pag o
                 que deve ser feito dentro
                 do campo input-->
             </div>
             <div>
-                <label>Email</label>
+                <label class="espaçamento">Email</label>
                 <input class="totalspace" type="email" name="email" id="email"
                 placeholder="Enter your email" required>
             </div>
             <div>
-                <label>Age (Optional)</label>
+                <label class="espaçamento">Age (Optional)</label>
                 <input class="totalspace" type="number" name="age" id="age" placeholder="Age">
             </div>
             <div>
-                <label>Which option best describes your current role?</label>
+                <label class="espaçamento">Which option best describes your current role?</label>
                   <select class="totalspace" name="role" id="role" required> <!--select e option vão mostrar
                   as opçoes que são possiveis selecionar ao clicar dentro do campo-->
                       <option disabled selected value>Selected current
@@ -46,22 +46,22 @@
                   </select>
             </div>
             <div>
-                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <p class="espaçamento">Would you recommend freeCodeCamp to a friend?</p>
                  <label>
-                    <input type="radio" name="Definitely"
+                    <input type="radio" name="radio1"
                     valeu="Definitely" checked> Definitely 
                  <label>   <!--tipo radio vai abrir a opção em formato de
                  bolinha para marcação ao
                  lado do input-->
-                    <input type="radio" name="maybe" value="maybe"> Maybe
+                    <input type="radio" name="radio1" value="maybe"> Maybe
                  </label> 
                  <label>
-                    <input type="radio" name="notsure" value="notsure"> Not sure
+                    <input type="radio" name="radio1" value="notsure"> Not sure
                  </label>  
                </label>
             </div>
             <div>
-                <label>What is your favorite feature of freeCodeCamp?</label>
+                <label class="espaçamento">What is your favorite feature of freeCodeCamp?</label>
                 <select class="totalspace" name="feature" id="feature" required>
                     <option disabled selected value>Select an option</option>
                     <option value="Challenges">Challenges</option>
@@ -71,7 +71,7 @@
                 </select>
             </div>
             <div>
-                <p>What would you like to see improved? (Check all that
+                <p class="espaçamento">What would you like to see improved? (Check all that
                 apply)</p>
                 <label>
                     <input type="checkbox"> Front-end Projects
@@ -107,6 +107,7 @@
                 <label>
                     <input type="checkbox"> Additional Courses
                 </label>
+                <br>
             </div>
         </fieldset>
         <div>

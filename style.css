@@ -10,6 +10,8 @@ header {
     color: white;
     text-align: center;
     padding-bottom: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 h1 {
@@ -43,9 +45,10 @@ fieldset {
 
 .totalspace {
     width: 100%;
+    border-radius: 5px;
 }
 
-body {
+.espaçamento {
     line-height: 200%;
 }
 
